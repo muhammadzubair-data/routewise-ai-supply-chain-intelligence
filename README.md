@@ -53,6 +53,8 @@ An end-to-end machine-learning portfolio project by <a href="https://zubairlabs.
 
 **https://routewise-ai-zubairlabs.streamlit.app**
 
+Deployed on Streamlit Community Cloud (Python 3.12) and checked in a browser on 21 November 2026: all six pages load, a prediction returns 68.0% for the default shipment, sidebar filters update the risk list, and the what-if customs toggle moves the estimate from 16.5% to 27.9%. These live results match the local test run.
+
 The app trains its model on first load (a few seconds), then caches it. If the app has been idle, Streamlit may show a short "waking up" screen first.
 
 ## Introduction
