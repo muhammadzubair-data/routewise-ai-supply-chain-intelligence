@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450" role="img" aria-label="RouteWise AI logistics intelligence cover">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081225"/><stop offset=".6" stop-color="#103651"/><stop offset="1" stop-color="#073f42"/></linearGradient><linearGradient id="a"><stop stop-color="#2ce0d4"/><stop offset="1" stop-color="#76a8ff"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="12"/></filter></defs>
+<rect width="1200" height="450" rx="24" fill="url(#bg)"/>
+<g opacity=".17" stroke="#7ce7e4" fill="none"><path d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200M0 400H1200"/><path d="M100 0V450M250 0V450M400 0V450M550 0V450M700 0V450M850 0V450M1000 0V450M1150 0V450"/></g>
+<circle cx="920" cy="225" r="155" fill="#2ce0d4" opacity=".08" filter="url(#glow)"/>
+<text x="72" y="72" fill="#7ee7eb" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="3">ZUBAIRLABS / INTELLIGENCE SYSTEMS</text>
+<text x="70" y="174" fill="white" font-family="Arial,sans-serif" font-size="79" font-weight="800">RouteWise <tspan fill="#37e0d1">AI</tspan></text>
+<text x="74" y="225" fill="#d1e7f2" font-family="Arial,sans-serif" font-size="26">Supply Chain Delay &amp; Delivery Risk Intelligence</text>
+<text x="75" y="290" fill="#a7cadb" font-family="Arial,sans-serif" font-size="19">Machine learning · Shipment risk · Logistics analytics</text>
+<rect x="73" y="335" width="225" height="46" rx="23" fill="#1b6570" stroke="#41e6d7"/><text x="97" y="365" fill="white" font-family="Arial,sans-serif" font-size="18">SYNTHETIC DATA DEMO</text>
+<g fill="none" stroke="url(#a)" stroke-width="6" stroke-linecap="round"><path d="M775 330C815 250 835 300 890 220S1000 135 1090 94" stroke-dasharray="12 15"/><circle cx="775" cy="330" r="13" fill="#35e5d1"/><circle cx="890" cy="220" r="13" fill="#7ba5ff"/><circle cx="1090" cy="94" r="13" fill="#35e5d1"/></g>
+<g transform="translate(875 260)"><rect x="0" y="30" width="215" height="75" rx="13" fill="#173d60" stroke="#5be1e6" stroke-width="3"/><rect x="145" y="0" width="70" height="65" rx="9" fill="#2b6b82" stroke="#5be1e6" stroke-width="3"/><circle cx="42" cy="110" r="20" fill="#0b172d" stroke="#64e3e3" stroke-width="6"/><circle cx="172" cy="110" r="20" fill="#0b172d" stroke="#64e3e3" stroke-width="6"/><path d="M20 51h96m-96 16h68" stroke="#68e7d6" stroke-width="5"/></g>
+</svg>
