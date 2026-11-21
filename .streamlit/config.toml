@@ -1,0 +1,32 @@
+[server]
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "viewer"
+
+[theme]
+font = "sans serif"
+baseRadius = "0.75rem"
+showSidebarBorder = true
+chartCategoricalColors = ["#22D3EE", "#14B8A6", "#2563EB", "#F59E0B", "#EF4444", "#8B5CF6", "#10B981", "#64748B"]
+
+[theme.light]
+primaryColor = "#0E7490"
+backgroundColor = "#F4F8FB"
+secondaryBackgroundColor = "#E6EEF5"
+textColor = "#0A1A33"
+
+[theme.light.sidebar]
+backgroundColor = "#FFFFFF"
+
+[theme.dark]
+primaryColor = "#22D3EE"
+backgroundColor = "#06132A"
+secondaryBackgroundColor = "#0F2240"
+textColor = "#E2E8F0"
+
+[theme.dark.sidebar]
+backgroundColor = "#0A1A33"

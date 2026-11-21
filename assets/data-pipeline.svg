@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="RouteWise AI data pipeline: generate, validate, separate features from outcomes, split in time, score">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#06132A"/><stop offset="1" stop-color="#0B2A44"/></linearGradient><linearGradient id="l" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs>
+<rect width="1200" height="300" rx="20" fill="url(#g)"/>
+<text x="40" y="48" fill="#67E8F9" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">DATA PIPELINE</text>
+<path d="M120 150 H1080" stroke="url(#l)" stroke-width="4" stroke-dasharray="10 8"/>
+<circle cx="120" cy="150" r="30" fill="#0E3550" stroke="#22D3EE" stroke-width="3"/><text x="120" y="158" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="700">1</text>
+<text x="120" y="222" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Generate</text>
+<text x="120" y="248" text-anchor="middle" fill="#A5F3FC" font-family="Arial,sans-serif" font-size="14">6,000 shipments · 2025</text>
+<text x="120" y="270" text-anchor="middle" fill="#7DD3C8" font-family="Arial,sans-serif" font-size="13">seasonal weather & peak backlog</text>
+<circle cx="360" cy="150" r="30" fill="#0E3550" stroke="#22D3EE" stroke-width="3"/><text x="360" y="158" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="700">2</text>
+<text x="360" y="222" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Validate</text>
+<text x="360" y="248" text-anchor="middle" fill="#A5F3FC" font-family="Arial,sans-serif" font-size="14">categories · ranges</text>
+<text x="360" y="270" text-anchor="middle" fill="#7DD3C8" font-family="Arial,sans-serif" font-size="13">bad rows dropped, NaN kept</text>
+<circle cx="600" cy="150" r="30" fill="#0E3550" stroke="#22D3EE" stroke-width="3"/><text x="600" y="158" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="700">3</text>
+<text x="600" y="222" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Separate</text>
+<text x="600" y="248" text-anchor="middle" fill="#A5F3FC" font-family="Arial,sans-serif" font-size="14">11 dispatch-time features</text>
+<text x="600" y="270" text-anchor="middle" fill="#7DD3C8" font-family="Arial,sans-serif" font-size="13">4 outcome columns held back</text>
+<circle cx="840" cy="150" r="30" fill="#0E3550" stroke="#22D3EE" stroke-width="3"/><text x="840" y="158" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="700">4</text>
+<text x="840" y="222" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Split in time</text>
+<text x="840" y="248" text-anchor="middle" fill="#A5F3FC" font-family="Arial,sans-serif" font-size="14">Jan–Sep train (4,500)</text>
+<text x="840" y="270" text-anchor="middle" fill="#7DD3C8" font-family="Arial,sans-serif" font-size="13">Oct–Dec holdout (1,500)</text>
+<circle cx="1080" cy="150" r="30" fill="#0E3550" stroke="#22D3EE" stroke-width="3"/><text x="1080" y="158" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="700">5</text>
+<text x="1080" y="222" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Score</text>
+<text x="1080" y="248" text-anchor="middle" fill="#A5F3FC" font-family="Arial,sans-serif" font-size="14">out-of-fold + holdout</text>
+<text x="1080" y="270" text-anchor="middle" fill="#7DD3C8" font-family="Arial,sans-serif" font-size="13">never scored in-sample</text>
+<text x="1160" y="48" text-anchor="end" fill="#5E7A99" font-family="Arial,sans-serif" font-size="13">synthetic data · seed 42</text></svg>

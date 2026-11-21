@@ -1,9 +1,14 @@
 __pycache__/
 .pytest_cache/
+.ruff_cache/
 *.py[cod]
 .venv/
+venv/
 .env
+.env.*
 .streamlit/secrets.toml
 *.joblib
 *.pkl
+*.log
+artifacts/
 .DS_Store

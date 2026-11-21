@@ -1,16 +1,66 @@
-name: Python CI
+name: CI
+
 on:
   push:
+    branches: [main]
   pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
+    name: Tests (Python ${{ matrix.python-version }})
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12']
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-      - run: python -m pip install --upgrade pip
-      - run: pip install -r requirements.txt pytest
-      - run: python -m pytest -q
-      - run: python -m compileall -q app.py routewise
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Compile check
+        run: python -m compileall -q app.py routewise scripts tests
+      - name: Unit, pipeline and app tests
+        run: python -m pytest -q
+      - name: Training script smoke test
+        run: python scripts/train.py --n 2000 --out /tmp/routewise_artifacts
+
+  e2e:
+    name: Browser end-to-end (Playwright)
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+          python -m playwright install --with-deps chromium
+      - name: Start Streamlit
+        run: |
+          nohup streamlit run app.py --server.headless true --server.port 8501 > streamlit.log 2>&1 &
+          for i in $(seq 1 60); do curl -sf http://localhost:8501/_stcore/health && break; sleep 2; done
+      - name: Run browser checks
+        run: python tests/e2e_ui.py http://localhost:8501
+      - name: Streamlit log
+        if: always()
+        run: cat streamlit.log
